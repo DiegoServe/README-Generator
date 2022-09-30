@@ -10,8 +10,7 @@ function generateMarkdown(data) {
 -[Installation](#installation)
 -[Usage](#usage)
 -[Contribution](#contribution)
--[Testing](#testing)
--[Additional Info](#additional-info)
+-[Additional Information](#additional-information)
 
 ## Description:
 ${data.description}
@@ -20,19 +19,19 @@ ${data.description}
 ${data.installation}
 
 ## Usage:
-${data.Usage}
+${data.usage}
 
 ## License:
-${data.licensing}
+${data.license}
 
 ## Contribution:
-${data.contribution}
+${data.contribute}
 
 ## Testing:
-${data.testing}
+${data.test}
 
-## Aditional Info:
-- Github: [${data.github}](https://github.com/${data.github})
+## Aditional Information:
+- Github: [${data.githubUsername}](https://github.com/${data.githubUsername})
 - Email: ${data.email} `;
 }
 

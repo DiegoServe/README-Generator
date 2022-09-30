@@ -14,7 +14,7 @@ const questions = [
             if (titleInput) {
                 return true;
             } else {
-                console.log('Please enter your title!');
+                console.log('Please enter your title before continuing');
                 return false;
             }
         }
@@ -45,45 +45,21 @@ const questions = [
             }
         }
     },
+    
     {
         type: 'input',
-        name: 'what',
-        message: 'What is your project and what problem will it solve?',
-        validate: whatInput => {
-            if (whatInput) {
+        name: 'description',
+        message: 'Please describe the project',
+        validate: descriptionInput => {
+            if (descriptionInput) {
                 return true;
             } else {
-                console.log('Please enter what your project is!');
+                console.log('Please describe your project!');
                 return false;
             }
         }
     },
-    {
-        type: 'input',
-        name: 'why',
-        message: 'Why did you create this project?',
-        validate: whyInput => {
-            if (whyInput) {
-                return true;
-            } else {
-                console.log('Please enter why you created this project!');
-                return false;
-            }
-        }
-    },
-    {
-        type: 'input',
-        name: 'how',
-        message: 'How will someone use this?',
-        validate: howInput => {
-            if (howInput) {
-                return true;
-            } else {
-                console.log('Please enter what your project is!');
-                return false;
-            }
-        }
-    },
+    
     {
         type: 'input',
         name: 'installation',
@@ -101,14 +77,7 @@ const questions = [
         type: 'input',
         name: 'usage',
         message: 'Please provide instructions and examples for use.',
-        validate: usageInput => {
-            if (usageInput) {
-                return true;
-            } else {
-                console.log('Please enter your use instructions!');
-                return false;
-            }
-        }
+        
     },
     {
         type: 'list',
@@ -142,19 +111,6 @@ const questions = [
             }
         }
     },
-    {
-        type: 'input',
-        name: 'test',
-        message: 'Please provide instructions on how to test the app.',
-        validate: testInput => {
-            if (testInput) {
-                return true;
-            } else {
-                console.log('Please enter your use test instructions!');
-                return false;
-            }
-        }
-    }
 ];
 
 // TODO: Create a function to write README file
