@@ -27,9 +27,6 @@ ${data.license}
 ## Contribution:
 ${data.contribute}
 
-## Testing:
-${data.test}
-
 ## Aditional Information:
 - Github: [${data.githubUsername}](https://github.com/${data.githubUsername})
 - Email: ${data.email} `;
